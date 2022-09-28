@@ -1,0 +1,58 @@
+/* @font-face {
+  font-family: Pocket Money;
+  src: url(../css/fonts/Pocket\ Money.ttf);
+} */
+
+body {
+  font-family: 'Bungee Spice', cursive;  
+  background: rgba(255,255,255,0.65) url(../img/cool-background.png);
+  background-blend-mode: lighten;
+ }
+ /* .parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+} */
+.navbar-brand {
+  font-size: 20px;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+#testimonial {
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top: 40px;
+}
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
