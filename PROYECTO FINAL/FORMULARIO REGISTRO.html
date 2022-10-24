@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de sitio sweetalert mensajes mas elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./css/form_registro.css"><!—actualiza dato -- >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="./IMG/LOGO DULCERIA FINAL.jpg" type="image/png" />
+    <title>Registo-Candy´s Market</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <center>
+         
+            <img src="./IMG/LOGO DULCERIA FINAL.jpg" height="100" > <br><br><!—actualiza dato-->
+            <h3 style="color: purple;">FORMULARIO DE REGISTRO<br>Candy´s Market</h3></center>
+        </div>
+        <form id="form" class="form" action="">
+            
+            <div class="form-control" style="background-color: pink;">
+                <label for="usuario" style="color: purple;">NOMBRE COMPLETO</label>
+                <input type="text" placeholder="Ingrese su nombre" id="usuario" style="color: purple;">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            <div class="form-control" style="background-color: pink;">
+                <label for="tipodoc" style="color: purple;">TIPO DOCUMENTO</label>
+                <select class="form-select mb-2" placeholder="Tipo de Documento" id="tipodoc" style="color: purple;">
+                    <option selected style="color: purple;"> Tipo de Documento</option>
+                    <option value="Cédula de Ciudadanía" style="color: purple;">Cédula de Ciudadanía</option>
+                    <option value="Cédula Extranjería" style="color: purple;">Cédula Extranjería</option>
+                    <option value="Tarjeta de Identidad" style="color: purple;">Tarjeta de Identidad</option>
+                    <option value="Pasaporte" style="color: purple;">Pasaporte</option>
+                    <option value="Registro Civil" style="color: purple;">Registro Civil</option>
+                    <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+                </select>
+                
+            </div>
+            <div class="form-control" style="background-color: pink;">
+                <label for="documento" style="color: purple;">NÚMERO DE DOCUMENTO</label>
+                <input type="text" placeholder="Ingrese su número de documento" id="documento" style="color: purple;">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            <div class="form-control" style="background-color: pink;">
+                <label for="telefono" style="color: purple;">NÚMERO DE TELEFONO</label>
+                <input type="text" placeholder="Ingrese su número de celular" id="telefono" style="color: purple;">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            <div class="w-100 form-control" style="background-color: pink;">
+                <label for="email" style="color: purple;">EMAIL</label>
+                <input type="text" placeholder="Ingrese cuenta@servidor.com" id="email" style="color: purple;">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            
+            <center>
+            
+            <button id="registro" class="w-100 btn btn-lg btn-primary " type="submit" onclick="return validainputs()">Registrar</button>
+            <center><a class="mt-2 w-100 btn btn-lg btn-primary" href="./Candy´s Market.html" role="button" style="background-color: pink;">Volver al inicio</a></center>
+        </center>   
+        </form>
+    </div>
+    <script src="../js/FOR_REGISTRO.js"></script><!—actualiza dato-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/filtertable.css">
+    <link rel="icon" href="./img/LOGO DULCERIA FINAL.jpg" type="image/png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy´s Market-Buscador</title>
+</head>
+<body bgcolor="purple">
+<center><h2>ENCUENTRA TU DULCE FAVORITO</h2></center>
+<img id="lupa" src="./img/LUPA.jpg" alt="" width="10px" height="10px">
+<!-- Seccion de buscador con evento onkeyup -->
+<input type="text" id="datos" onkeyup="Buscar()" placeholder="Dulces Dulces Dulces Dulces ">
+<!-- Seccion de tabla de datos peliculas -->
+<table id="tablaDatos">
+    <tr class="header">
+        <th style="width: 40%;">GOLOSINAS</th>
+        <th style="width: 30%;">Reseña de tu Golosina</th>
+        <th style="width: 30%;">Sabores</th>
+    </tr>
+<tr>
+    <td>BomBonBum</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/bombonbum2.jpg" alt=""></a></td>
+    <td>Tropical, Fresa, Limon, atc...</td>
+</tr>
+<!--  REINICIO DE TALLER FILTER TABLE -->
+<tr>
+    <td>MaXcomBi</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/maxcombi2.jpg" alt=""></a></td>
+    <td>Funccion mix</td>
+</tr>
+<tr>
+    <td>Nerds Nerds</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/nerds.jpg" alt=""></a></td>
+    <td>Fresa y Mora </td>
+</tr>
+<tr>
+    <td>M&M</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/m&m.jpg" alt=""></a></td>
+    <td>Chocolote Y fiesta loca </td>
+</tr>
+<tr>
+    <td>SuperHierAcido</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/superhiperacido.jpg" alt=""></a></td>
+    <td>Limon</td>
+</tr>
+<tr>
+    <td>Nutella</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/nutella.jpg" alt=""></a></td>
+    <td>Mani con chocolate, Chocolate</td>
+</tr>
+<tr>
+    <td>Chocolatonas Jet</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/Jeet.jpg" alt=""></a></td>
+    <td>Chocolate y Chocolate blanco </td>
+</tr>
+<tr>
+    <td>Chescola</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/chescola.jpg" alt=""></a></td>
+    <td>Chocolate</td>
+</tr>
+<tr>
+    <td>Gomix</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/gomas de la casa.jpg" alt=""></a></td>
+    <td>Frutales</td>
+</tr>
+<tr>
+    <td>Gol</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/Gol.jpg" alt=""></a></td>
+    <td>Chocolate</td>
+</tr>
+<tr>
+    <td>BuBalu</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/bubalu.jpg" alt=""></a></td>
+    <td>Frasa, Frutos Rojos, Limon</td>
+</tr>
+<tr>
+    <td>Papas lays</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/Lays.jpg" alt=""></a></td>
+    <td>Pollo, Tomamte, Natural </td>
+</tr>
+<tr>
+    <td>Margarita</td>
+    <td><a href="CARRITO DE COMPRAS C.M.html"><img src="./img/Papasmargarita.jpg" alt=""></a></td>
+    <td>SURTIDO</td>
+</tr>
+</table>
+<script>
+    function Buscar() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("datos");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("tablaDatos");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+</body>
+</html>
